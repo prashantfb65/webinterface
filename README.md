@@ -23,6 +23,16 @@ cd webinterface
 ```bash
 python manage.py startapp accounts_application
 ```
+These applications being created are pluggable and can be used in another Django project as well.
+
+## Purpose of Django related files (Application Level)
+
+- `admin.py`: We can register the model here which Django will use with Django's admin interface
+- `apps.py`: Application specific configurations are stored here
+- `models.py`: This is where application's data models will be stored
+- `tests.py`: We can store test functions to test our code
+- `views.py`: This is where you have functions that handle request and return responses
+- `Migrations folder`: This folder stored database specific information as it relates to the models
 
 ## Start the website 
 
