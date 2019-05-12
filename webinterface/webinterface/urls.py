@@ -21,5 +21,5 @@ from accounts_application import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', views.index, name='index'),
-    url(r'^accounts_application/', include('accounts_application.urls'))
+    url(r'^accounts/', include('accounts_application.urls'))
 ]
